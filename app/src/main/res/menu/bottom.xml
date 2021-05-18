@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/BOTTOM_Buyer"
+        android:icon="@drawable/buyer"
+        android:title="Buyer" />
+
+    <item
+        android:id="@+id/BOTTOM_NearBy"
+        android:icon="@drawable/ic_baseline_near_me_24"
+        android:title="NearBy" />
+
+    <item
+        android:id="@+id/BOTTOM_Seller"
+        android:icon="@drawable/seller"
+        android:title="Seller" />
+    <item
+        android:id="@+id/BOTTOM_About"
+        android:icon="@drawable/aboutus"
+        android:title="About" />
+    <item
+        android:id="@+id/BOTTOM_Logout"
+        android:icon="@drawable/logout"
+        android:title="Logout" />
+
+
+</menu>

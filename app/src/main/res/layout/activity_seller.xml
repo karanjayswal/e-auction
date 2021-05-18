@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BottomNavigation.Seller">
+
+    <EditText
+        android:id="@+id/etNameSeller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPriceSeller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etDescSeller"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Enter Base Price"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etDescSeller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNameSeller"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:hint="Enter Desc"
+        android:inputType="textPersonName" />
+
+    <ImageView
+        android:id="@+id/imageViewSeller"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/etPriceSeller"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="Select"
+        android:text="Select Image" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:onClick="Upload"
+        android:text="Next" />
+
+    <include
+        android:id="@+id/navigation"
+        layout="@layout/element_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

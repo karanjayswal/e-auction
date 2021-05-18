@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Authentication.SignUp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary"
+            app:cardCornerRadius="200dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            >
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="115dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:cropToPadding="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Enter Username"
+            android:inputType="textPersonName"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:padding="9dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="9dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@android:color/white"
+                android:onClick="ShowPassword"
+                app:srcCompat="@drawable/hide" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="SignUp" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="SignIn" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
